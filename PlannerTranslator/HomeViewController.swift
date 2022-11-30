@@ -1,5 +1,5 @@
 //
-//  CalendarViewController.swift
+//  HomeViewController.swift
 //  PlannerTranslator
 //
 //  Created by Galina Iaroshenko on 29.11.2022.
@@ -7,12 +7,14 @@
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPurple
-        print("CalendarViewController")
+        view.backgroundColor = .systemYellow
+        print("HomeViewController")
+       
     }
     
+     
 }

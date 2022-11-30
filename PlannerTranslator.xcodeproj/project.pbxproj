@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FECC27A72935D23700C702B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27A62935D23700C702B7 /* HomeViewController.swift */; };
+		FECC27A92935D29200C702B7 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27A82935D29200C702B7 /* PersonViewController.swift */; };
+		FECC27AB2935D2B200C702B7 /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27AA2935D2B200C702B7 /* CustomersViewController.swift */; };
+		FECC27AD2935E57100C702B7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27AC2935E57100C702B7 /* CalendarViewController.swift */; };
 		FEEFC9B92934EEA9006F166F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEFC9B82934EEA9006F166F /* AppDelegate.swift */; };
 		FEEFC9BB2934EEA9006F166F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEFC9BA2934EEA9006F166F /* SceneDelegate.swift */; };
-		FEEFC9BD2934EEA9006F166F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEFC9BC2934EEA9006F166F /* ViewController.swift */; };
+		FEEFC9BD2934EEA9006F166F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEFC9BC2934EEA9006F166F /* MainTabBarController.swift */; };
 		FEEFC9C02934EEA9006F166F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEEFC9BE2934EEA9006F166F /* Main.storyboard */; };
 		FEEFC9C32934EEA9006F166F /* PlannerTranslator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEEFC9C12934EEA9006F166F /* PlannerTranslator.xcdatamodeld */; };
 		FEEFC9C52934EEAA006F166F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEEFC9C42934EEAA006F166F /* Assets.xcassets */; };
@@ -37,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FECC27A62935D23700C702B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FECC27A82935D29200C702B7 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		FECC27AA2935D2B200C702B7 /* CustomersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
+		FECC27AC2935E57100C702B7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FEEFC9B52934EEA9006F166F /* PlannerTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlannerTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEFC9B82934EEA9006F166F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEEFC9BA2934EEA9006F166F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEEFC9BC2934EEA9006F166F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEEFC9BC2934EEA9006F166F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FEEFC9BF2934EEA9006F166F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEEFC9C22934EEA9006F166F /* PlannerTranslator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlannerTranslator.xcdatamodel; sourceTree = "<group>"; };
 		FEEFC9C42934EEAA006F166F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,12 +111,16 @@
 			children = (
 				FEEFC9B82934EEA9006F166F /* AppDelegate.swift */,
 				FEEFC9BA2934EEA9006F166F /* SceneDelegate.swift */,
-				FEEFC9BC2934EEA9006F166F /* ViewController.swift */,
+				FEEFC9BC2934EEA9006F166F /* MainTabBarController.swift */,
 				FEEFC9BE2934EEA9006F166F /* Main.storyboard */,
 				FEEFC9C42934EEAA006F166F /* Assets.xcassets */,
 				FEEFC9C62934EEAA006F166F /* LaunchScreen.storyboard */,
 				FEEFC9C92934EEAA006F166F /* Info.plist */,
 				FEEFC9C12934EEA9006F166F /* PlannerTranslator.xcdatamodeld */,
+				FECC27A62935D23700C702B7 /* HomeViewController.swift */,
+				FECC27A82935D29200C702B7 /* PersonViewController.swift */,
+				FECC27AA2935D2B200C702B7 /* CustomersViewController.swift */,
+				FECC27AC2935E57100C702B7 /* CalendarViewController.swift */,
 			);
 			path = PlannerTranslator;
 			sourceTree = "<group>";
@@ -261,8 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC27AD2935E57100C702B7 /* CalendarViewController.swift in Sources */,
+				FECC27A72935D23700C702B7 /* HomeViewController.swift in Sources */,
+				FECC27A92935D29200C702B7 /* PersonViewController.swift in Sources */,
 				FEEFC9C32934EEA9006F166F /* PlannerTranslator.xcdatamodeld in Sources */,
-				FEEFC9BD2934EEA9006F166F /* ViewController.swift in Sources */,
+				FECC27AB2935D2B200C702B7 /* CustomersViewController.swift in Sources */,
+				FEEFC9BD2934EEA9006F166F /* MainTabBarController.swift in Sources */,
 				FEEFC9B92934EEA9006F166F /* AppDelegate.swift in Sources */,
 				FEEFC9BB2934EEA9006F166F /* SceneDelegate.swift in Sources */,
 			);
