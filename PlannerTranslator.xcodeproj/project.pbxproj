@@ -118,9 +118,9 @@
 				FEEFC9C92934EEAA006F166F /* Info.plist */,
 				FEEFC9C12934EEA9006F166F /* PlannerTranslator.xcdatamodeld */,
 				FECC27A62935D23700C702B7 /* HomeViewController.swift */,
+				FECC27AC2935E57100C702B7 /* CalendarViewController.swift */,
 				FECC27A82935D29200C702B7 /* PersonViewController.swift */,
 				FECC27AA2935D2B200C702B7 /* CustomersViewController.swift */,
-				FECC27AC2935E57100C702B7 /* CalendarViewController.swift */,
 			);
 			path = PlannerTranslator;
 			sourceTree = "<group>";
