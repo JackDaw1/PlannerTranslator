@@ -58,8 +58,9 @@ class HomeViewController: UIViewController {
     @objc private func didTapNextScreenButton() {
         let FirstHomeVC = FirstHomeViewController()
         let navHomeToFirstVC = UINavigationController(rootViewController: FirstHomeVC)
-        
-        present(navHomeToFirstVC, animated: true)
+        navigationController?.pushViewController(navHomeToFirstVC, animated: true)
+        show(navHomeToFirstVC, sender: self)
+
     }
     
     

@@ -61,15 +61,15 @@ class CustomersViewController: UIViewController {
     @objc private func didTapNextScreenButton() {
         let FirstCustomerVC = FirstCustomerViewController()
         let navCustomerToFirstVC = UINavigationController(rootViewController: FirstCustomerVC)
-        
-        present(navCustomerToFirstVC, animated: true)
+        navigationController?.pushViewController(navCustomerToFirstVC, animated: true)
+        show(navCustomerToFirstVC, sender: self)
     }
     
     @objc private func didTapHomeButton() {
         let rootVC = HomeViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
-        
-        present(navVC, animated: true)
+        navigationController?.pushViewController(navVC, animated: true)
+        show(navVC, sender: self)
     }
     
 }

@@ -61,15 +61,15 @@ class PersonViewController: UIViewController {
     @objc private func didTapNextScreenButton() {
         let FirstPersonVC = FirstPersonViewController()
         let navPersonToFirstVC = UINavigationController(rootViewController: FirstPersonVC)
-        
-        present(navPersonToFirstVC, animated: true)
+        navigationController?.pushViewController(navPersonToFirstVC, animated: true)
+        show(navPersonToFirstVC, sender: self)
     }
     
     @objc private func didTapHomeButton() {
         let rootVC = HomeViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
-        
-        present(navVC, animated: true)
+        navigationController?.pushViewController(navVC, animated: true)
+        show(navVC, sender: self)
     }
     
 }

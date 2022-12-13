@@ -66,15 +66,15 @@ class CalendarViewController: UIViewController {
     @objc private func didTapNextScreenButton() {
         let FirstCalendarVC = FirstCalendarViewController()
         let navCalendarToFirstVC = UINavigationController(rootViewController: FirstCalendarVC)
-        
-        present(navCalendarToFirstVC, animated: true)
+        navigationController?.pushViewController(navCalendarToFirstVC, animated: true)
+        show(navCalendarToFirstVC, sender: self)
     }
     
     @objc private func didTapHomeButton() {
         let rootVC = HomeViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
-        
-        present(navVC, animated: true)
+        navigationController?.pushViewController(navVC, animated: true)
+        show(navVC, sender: self)
     }
     
     
