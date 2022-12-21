@@ -7,10 +7,10 @@
 
 import UIKit
 
-class CustomersViewController: UINavigationController {
+class CustomersViewController: UIViewController {
 
     let buttonToTheNextScreen = UIButton()
-    let homeButton = UIButton()
+    //public let homeButton = UIButton()
     
     let textLabel:UILabel = {
            let label = UILabel()
@@ -51,12 +51,11 @@ class CustomersViewController: UINavigationController {
         buttonToTheNextScreen.frame = CGRect(x: 100, y: 400, width: 200, height: 52)
         buttonToTheNextScreen.addTarget(self, action: #selector(didTapNextScreenButton), for: .touchUpInside)
         
-        homeButton.setTitle("Домой", for: .normal)
-        view.addSubview(homeButton)
-        homeButton.backgroundColor = .white
-        homeButton.setTitleColor(.black, for: .normal)
-        homeButton.frame = CGRect(x: 100, y: 100, width: 200, height: 52)
-        homeButton.addTarget(self, action: #selector(didTapHomeButton), for: .touchUpInside)
+       
+                
+        
+        
+        
     }
     @objc private func didTapNextScreenButton() {
         let FirstCustomerVC = FirstCustomerViewController()
@@ -65,12 +64,7 @@ class CustomersViewController: UINavigationController {
         show(navCustomerToFirstVC, sender: self)
     }
     
-    @objc private func didTapHomeButton() {
-        let rootVC = HomeViewController()
-        let navVC = UINavigationController(rootViewController: rootVC)
-        navigationController?.pushViewController(navVC, animated: true)
-        show(navVC, sender: self)
-    }
+    
     
 }
 
@@ -80,4 +74,34 @@ class FirstCustomerViewController: UIViewController {
         view.backgroundColor = .systemRed
         title = "Вы перешли на следующий экран"
     }
+}
+
+class ToHomeViewController: UIViewController {
+    
+    let homeButton = UIButton()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemRed
+        title = "Вы перешли на следующий экран"
+        
+        homeButton.addTarget(self, action: #selector(didTapHomeButton), for: .touchUpInside)
+        homeButton.setTitle("Домой", for: .normal)
+        view.addSubview(homeButton)
+        homeButton.backgroundColor = .white
+        homeButton.setTitleColor(.black, for: .normal)
+        homeButton.frame = CGRect(x: 100, y: 100, width: 200, height: 52)
+    }
+    
+    @objc private func didTapHomeButton() {
+        /*
+        let rootVC = HomeViewController()
+        let navVC = UINavigationController(rootViewController: rootVC)
+        navigationController?.pushViewController(navVC, animated: true)
+        show(navVC, sender: self)
+         */
+
+        self.navigationController?.popToRootViewController(animated:true)
+    }
+    
 }

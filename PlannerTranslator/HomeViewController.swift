@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UINavigationController {
+class HomeViewController: UIViewController {
     
     let buttonToTheNextScreen = UIButton()
     

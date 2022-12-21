@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CalendarViewController: UINavigationController {
+class CalendarViewController: UIViewController {
     
     let buttonToTheNextScreen = UIButton()
     let homeButton = UIButton()
@@ -71,19 +71,21 @@ class CalendarViewController: UINavigationController {
     }
     
     @objc private func didTapHomeButton() {
-        /*
+       
          let rootVC = HomeViewController()
          let navVC = UINavigationController(rootViewController: rootVC)
          navigationController?.pushViewController(navVC, animated: true)
          show(navVC, sender: self)
-         }
-         */
+         
+     
+        /*
         let childNavigation = UINavigationController(rootViewController: HomeViewController())
         childNavigation.willMove(toParent: self)
         addChild(childNavigation)
         childNavigation.view.frame = view.frame
         view.addSubview(childNavigation.view)
         childNavigation.didMove(toParent: self)
+         */
     }
     
 }
