@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomersViewController: UIViewController {
+class CustomersViewController: UINavigationController {
 
     let buttonToTheNextScreen = UIButton()
     let homeButton = UIButton()

@@ -8,28 +8,29 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-
-    /*private let button: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 52))
-        button.setTitle("Профиль", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        return button
-    }()*/
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
-        //view.addSubview(button)
-        //button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        UITabBar.appearance().barTintColor = .systemBackground
+          tabBar.tintColor = .label
         generateTabBar()
         setTabBarAppearance()
     }
-    /*
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        button.center = view.center
-    }*/
+
+    
+    
+    fileprivate func createNavController(for rootViewController: UIViewController,
+                                                     title: String,
+                                                     image: UIImage) -> UIViewController {
+           let navController = UINavigationController(rootViewController: rootViewController)
+           navController.tabBarItem.title = title
+           navController.tabBarItem.image = image
+           navController.navigationBar.prefersLargeTitles = true
+           rootViewController.navigationItem.title = title
+           return navController
+       }
+     
     
     private func generateTabBar() {
         viewControllers = [

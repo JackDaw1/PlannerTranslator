@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonViewController: UIViewController {
+class PersonViewController: UINavigationController {
     let buttonToTheNextScreen = UIButton()
     let homeButton = UIButton()
     
