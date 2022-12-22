@@ -80,7 +80,7 @@ class FirstCustomerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemRed
-        title = "Вы перешли на следующий экран"
+        //title = "Вы перешли на следующий экран"
         
     
         buttonToTheNextScreen1.setTitle("На следующий экран", for: .normal)
@@ -117,7 +117,7 @@ class SecondCustomerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
-        title = "Вы перешли на следующий экран"
+        //title = "Вы перешли на следующий экран"
         
         homeButton2.setTitle("Домой", for: .normal)
         view.addSubview(homeButton2)
