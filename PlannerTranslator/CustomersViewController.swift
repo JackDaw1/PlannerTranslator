@@ -100,19 +100,6 @@ class FirstCustomerViewController: UIViewController {
         buttonToTheNextScreen1.frame = CGRect(x: 100, y: 400, width: 200, height: 52)
         buttonToTheNextScreen1.addTarget(self, action: #selector(didTapNextScreenButton1), for: .touchUpInside)
         
-//        textLabel.text = "Заказчики"
-//        containerView.addSubview(textLabel)
-//        view.addSubview(containerView)
-//        containerView.heightAnchor.constraint(equalToConstant:400).isActive = true
-//        containerView.widthAnchor.constraint(equalToConstant:600).isActive = true
-//        containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-//                        
-//        textLabel.heightAnchor.constraint(equalToConstant:150).isActive = true
-//        textLabel.widthAnchor.constraint(equalToConstant:190).isActive = true
-//        textLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
-//        textLabel.translatesAutoresizingMaskIntoConstraints = false
-        
         homeButton1.addTarget(self, action: #selector(didTapHomeButton1), for: .touchUpInside)
         homeButton1.setTitle("Домой", for: .normal)
         view.addSubview(homeButton1)
@@ -124,20 +111,11 @@ class FirstCustomerViewController: UIViewController {
     }
     
     @objc private func didTapHomeButton1() {
-        /*
-        let rootVC = HomeViewController()
-        let navVC = UINavigationController(rootViewController: rootVC)
-        navigationController?.pushViewController(navVC, animated: true)
-        show(navVC, sender: self)
-         */
-
         self.navigationController?.popToRootViewController(animated:true)
     }
+    
     @objc private func didTapNextScreenButton1() {
-        let SecondCustomerVC = SecondCustomerViewController()
-        let navCustomerToSecondVC = UINavigationController(rootViewController: SecondCustomerVC)
-        navigationController?.pushViewController(navCustomerToSecondVC, animated: true)
-        show(navCustomerToSecondVC, sender: self)
+        self.navigationController?.pushViewController(SecondCustomerViewController(), animated: true)
     }
 }
 
@@ -159,13 +137,6 @@ class SecondCustomerViewController: UIViewController {
     }
     
     @objc private func didTapHomeButton2() {
-        /*
-        let rootVC = HomeViewController()
-        let navVC = UINavigationController(rootViewController: rootVC)
-        navigationController?.pushViewController(navVC, animated: true)
-        show(navVC, sender: self)
-         */
-
         self.navigationController?.popToRootViewController(animated:true)
     }
     
