@@ -52,20 +52,11 @@ class CustomersViewController: UIViewController {
         buttonToTheNextScreen.setTitleColor(.black, for: .normal)
         buttonToTheNextScreen.frame = CGRect(x: 100, y: 400, width: 200, height: 52)
         buttonToTheNextScreen.addTarget(self, action: #selector(didTapNextScreenButton), for: .touchUpInside)
-    
-        
-        
-        
     }
+    
     @objc private func didTapNextScreenButton() {
-        let FirstCustomerVC = FirstCustomerViewController()
-        let navCustomerToFirstVC = UINavigationController(rootViewController: FirstCustomerVC)
-        navigationController?.pushViewController(navCustomerToFirstVC, animated: true)
-        show(navCustomerToFirstVC, sender: self)
+        self.navigationController?.pushViewController(FirstCustomerViewController(), animated: true)
     }
-    
-    
-    
 }
 
 class FirstCustomerViewController: UIViewController {
@@ -75,7 +66,6 @@ class FirstCustomerViewController: UIViewController {
     
     let textLabel:UILabel = {
            let label = UILabel()
-           //self.translatesAutoresizingMaskIntoConstraints = false
            label.font = UIFont.boldSystemFont(ofSize: 20)
            return label
        }()
@@ -83,7 +73,7 @@ class FirstCustomerViewController: UIViewController {
     let containerView:UIView = {
                let view = UIView()
                view.translatesAutoresizingMaskIntoConstraints = false
-               view.clipsToBounds = true // this will make sure its children do not go out of the boundary
+               view.clipsToBounds = true
                return view
            }()
     
@@ -99,6 +89,7 @@ class FirstCustomerViewController: UIViewController {
         buttonToTheNextScreen1.setTitleColor(.black, for: .normal)
         buttonToTheNextScreen1.frame = CGRect(x: 100, y: 400, width: 200, height: 52)
         buttonToTheNextScreen1.addTarget(self, action: #selector(didTapNextScreenButton1), for: .touchUpInside)
+
         
         homeButton1.addTarget(self, action: #selector(didTapHomeButton1), for: .touchUpInside)
         homeButton1.setTitle("Домой", for: .normal)
@@ -125,7 +116,7 @@ class SecondCustomerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemBlue
         title = "Вы перешли на следующий экран"
         
         homeButton2.setTitle("Домой", for: .normal)

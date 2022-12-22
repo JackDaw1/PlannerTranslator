@@ -66,10 +66,10 @@ class PersonViewController: UIViewController {
     }
     
     @objc private func didTapHomeButton() {
-        let rootVC = HomeViewController()
-        let navVC = UINavigationController(rootViewController: rootVC)
-        navigationController?.pushViewController(navVC, animated: true)
-        show(navVC, sender: self)
+        //let rootVC = HomeViewController()
+       // let navVC = UINavigationController(rootViewController: rootVC)
+        //navigationController?.pushViewController(navVC, animated: true)
+        //show(navVC, sender: self)
     }
     
 }

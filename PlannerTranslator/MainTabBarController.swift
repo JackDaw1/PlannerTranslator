@@ -26,7 +26,7 @@ class MainTabBarController: UITabBarController {
            let navController = UINavigationController(rootViewController: rootViewController)
            navController.tabBarItem.title = title
            navController.tabBarItem.image = image
-           navController.navigationBar.prefersLargeTitles = true
+           //navController.navigationBar.prefersLargeTitles = true
            rootViewController.navigationItem.title = title
            return navController
        }
@@ -34,6 +34,7 @@ class MainTabBarController: UITabBarController {
     
     private func generateTabBar() {
         viewControllers = [
+            /*
             generateVC(
                 viewController: CalendarViewController(),
                 title: "Календарь",
@@ -45,17 +46,17 @@ class MainTabBarController: UITabBarController {
                 title: "Заказы",
                 image: UIImage(systemName: "house.fill")
             ),
-            
-            generateVC(
-                viewController: CustomersViewController(),
+            */
+            createNavController(
+                for: CustomersViewController(),
                 title: "Заказчики",
-                image: UIImage(systemName: "person")
+                image: UIImage(systemName: "person")!
             ),
             
-            generateVC(
-                viewController: PersonViewController(),
+            createNavController(
+                for: PersonViewController(),
                 title: "Профиль",
-                image: UIImage(systemName: "person.circle")
+                image: UIImage(systemName: "person.circle")!
             )
         ]
     }

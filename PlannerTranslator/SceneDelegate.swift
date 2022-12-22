@@ -20,7 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        window?.rootViewController = MainTabBarController()
+//        window?.rootViewController = MainTabBarController()
+        let mainVC = MainTabBarController()
+                let navController = UINavigationController(rootViewController: mainVC)
+                mainVC.navigationItem.title = ""
+                window?.rootViewController = navController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
